@@ -54,26 +54,13 @@ pip install numpy pandas scikit-learn skl2onnx onnx MetaTrader5
 ### Train from MT5 terminal data
 
 ```bash
-python train_mt5_linearsvc_calibrated_classifier.py ^
-  --symbol XAGUSD ^
-  --timeframe M15 ^
-  --bars 20000 ^
-  --horizon-bars 8 ^
-  --train-ratio 0.70 ^
-  --output-dir output_linearsvc_XAGUSD_M15_h8
+python train_mt5_linearsvc_calibrated_classifier.py --symbol XAGUSD --timeframe M15 --bars 40000 --horizon-bars 8 --train-ratio 0.70 --output-dir output_linearsvc_XAGUSD_M15_h8
 ```
 
 ### Train from CSV
 
 ```bash
-python train_mt5_linearsvc_calibrated_classifier.py ^
-  --csv data.csv ^
-  --symbol BTCUSD ^
-  --timeframe M15 ^
-  --bars 20000 ^
-  --horizon-bars 8 ^
-  --train-ratio 0.70 ^
-  --output-dir output_linearsvc_BTCUSD_M15_h8
+python train_mt5_linearsvc_calibrated_classifier.py --csv data.csv --symbol BTCUSD --timeframe M15 --bars 40000 --horizon-bars 8 --train-ratio 0.70 --output-dir output_linearsvc_BTCUSD_M15_h8
 ```
 
 ## Notes
