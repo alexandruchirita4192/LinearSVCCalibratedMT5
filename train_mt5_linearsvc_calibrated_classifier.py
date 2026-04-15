@@ -504,6 +504,14 @@ TIMEFRAME: {args.timeframe}
 HORIZON BARS: {args.horizon_bars}
 FEATURE_COUNT: {len(FEATURE_COLS)}
 
+TRAIN UTC:
+  start: {train_df["time"].iloc[0]}
+  end  : {train_df["time"].iloc[-1]}
+
+TEST UTC:
+  start: {test_df["time"].iloc[0]}
+  end  : {test_df["time"].iloc[-1]}
+
 FEATURES:
 - ret_1
 - ret_3
