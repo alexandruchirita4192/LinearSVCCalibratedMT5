@@ -8,6 +8,8 @@ This repository contains a baseline package for training a multiclass `LinearSVC
 - `MT5_LinearSVC_Calibrated_ONNX_Strategy.mq5`
 - `README.md`
 
+As per optimization and testing, BTCUSD with M15 timeframe has been tested to give good results (based on history, I cannot guarantee future results even if the test looks good).
+
 ## Model idea
 
 The model predicts three classes:
